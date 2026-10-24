@@ -124,14 +124,20 @@ const S = L.scoring;
 const byId = Object.fromEntries(L.players.map(p=>[p.id,p]));
 const fmt = n => n==null ? '' : (n>0?'+':'')+String(n).replace(/\.5$/,'½').replace(/^(\+|-)?0½$/,'$1½');
 const fmtLine = n => n==null ? '—' : (n===0?'PK':(n>0?'+':'')+n);
+const isTotal = p => p.market==='total';
+const pickLine = (p,n) => isTotal(p) ? (n==null?'—':(p.side==='over'?'o':'u')+n) : fmtLine(n);
+const pickName = p => isTotal(p) ? (p.side==='over'?'Over':'Under') : (p.team+(p.market==='spread_h1'?' 1H':''));
 const tz = L.timezone || 'America/Los_Angeles';
 const dt = iso => iso ? new Date(iso).toLocaleString('en-US',{timeZone:tz,month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) + ' PT' : '—';
 
 /* grading */
 function gradePick(p, g){
+  if(p.manual_result) return p.manual_result;
+  if(g && g.voided) return 'P';
   if(!g || !g.final) return 'pending';
   const line = p.official_line ?? p.submitted_line;
   if(line==null) return 'pending';
+  if(p.market==='total'){ const sum=g.final.away+g.final.home; const m = p.side==='over'? sum-line : line-sum; return m>0?'W':m<0?'L':'P'; }
   const mine = p.side==='away'? g.final.away : g.final.home;
   const theirs = p.side==='away'? g.final.home : g.final.away;
   const m = mine - theirs + line;
@@ -142,7 +148,7 @@ function points(res,p){ const w=weight(p); return res==='W'?S.pick_win*w:res==='
 
 function enrich(week){
   const games = Object.fromEntries(week.games.map(g=>[g.id,g]));
-  return week.picks.map(p=>{ const g=games[p.game_id]; const res=gradePick(p,g); return {...p,game:g,res,pts:points(res,p),w:weight(p)}; });
+  return week.picks.map((p,idx)=>{ const g=games[p.game_id]; const res=gradePick(p,g); return {...p,idx,game:g,res,pts:points(res,p),w:weight(p)}; });
 }
 function totals(filter){
   const t={}; L.players.forEach(p=>{ const c=(!filter&&p.carryover)||{}; const W=c.W||0, Lc=c.L||0, P=c.P||0;
@@ -216,7 +222,7 @@ function viewWeek(n){
   const order = L.players.slice().sort((a,b)=>weekTotals(b.id).pts-weekTotals(a.id).pts);
   return `<div class="weekbar">${WEEKS.map(x=>`<button aria-pressed="${x.week===w.week}" onclick="location.hash='week/${x.week}'">${x.label||'Week '+x.week}</button>`).join('')}</div>
   <p class="sub">${w.status==='graded'?`Graded. Official lines from ${cap(w.line_source?.book)}, stamped ${dt(w.line_source?.fetched_at)}.`:w.status==='locked'?`Lines locked ${dt(w.line_source?.fetched_at)}. Grading as games finish.`:`Open. Lines lock Friday 11:59 PM PT. Tap a pick for details.`}</p>
-  ${order.map(pl=>{ const ps=(byP[pl.id]||[]).slice().sort((a,b)=>(b.lock-a.lock)||a.game.kickoff.localeCompare(b.game.kickoff)); const t=weekTotals(pl.id);
+  ${order.map(pl=>{ const ps=(byP[pl.id]||[]).slice().sort((a,b)=>(b.lock-a.lock)||(a.game.kickoff||'').localeCompare(b.game.kickoff||'')); const t=weekTotals(pl.id);
     return `<div class="card">
       <div class="top"><span class="who">${esc(pl.name)}</span><span class="wk">${ps.some(p=>p.res!=='pending')?`${t.W}-${t.L}-${t.P} <b>${t.pts>0?'+':''}${t.pts}</b>`:(ps.length?`${ps.length} of ${S.picks_per_week} in`:'')}</span></div>
       ${ps.length? ps.map(p=>pickRow(p,w)).join('') : `<div class="empty">No picks in yet.</div>`}
@@ -224,15 +230,15 @@ function viewWeek(n){
     </div>`; }).join('')}`;
 }
 function pickRow(p,w){
-  const g=p.game; const opp = p.side==='away'? `at ${g.home}` : `vs ${g.away}`;
+  const g=p.game; const opp = isTotal(p)? `${g.away} at ${g.home}` : p.side==='away'? `at ${g.home}` : `vs ${g.away}`;
   const line = p.official_line ?? p.submitted_line;
   const moved = p.official_line!=null && p.official_line!==p.submitted_line;
-  const res = p.res==='pending' ? (g.final?'':'<span class="res pending">'+(new Date(g.kickoff)<Date.now()?'live':'')+'</span>') : `<span class="res ${p.res}">${p.res}</span>`;
+  const res = p.res==='pending' ? (g.final?'':'<span class="res pending">'+(g.kickoff&&new Date(g.kickoff)<Date.now()?'live':'')+'</span>') : `<span class="res ${p.res}">${p.res}</span>`;
   const score = g.final? `${g.away} ${g.final.away}, ${g.home} ${g.final.home}` : dt(g.kickoff);
-  return `<button class="pick" onclick="proof(${w.week},'${p.player}','${p.game_id}')">
-    <span><span class="team">${esc(p.team)} <span class="vs">${esc(opp)}</span>${p.lock?'<span class="lockbadge">LOCK</span>':''}</span>
+  return `<button class="pick" onclick="proof(${w.week},${p.idx})">
+    <span><span class="team">${esc(pickName(p))} <span class="vs">${esc(opp)}</span>${p.lock?'<span class="lockbadge">LOCK</span>':''}</span>
     <span class="meta">${g.league} · ${score}</span></span>
-    <span class="right">${moved?`<span class="moved">was ${fmtLine(p.submitted_line)}</span>`:''}<span class="line">${fmtLine(line)}</span>${res}</span>
+    <span class="right">${moved?`<span class="moved">was ${pickLine(p,p.submitted_line)}</span>`:''}<span class="line">${pickLine(p,line)}</span>${res}</span>
   </button>`;
 }
 
@@ -245,7 +251,7 @@ function viewPlayer(id){
   const all=[]; WEEKS.forEach(w=>enrich(w).filter(p=>p.player===id&&p.res!=='pending').forEach(p=>all.push({...p,week:w})));
   const rec = f => { const s=all.filter(f); const W=s.filter(p=>p.res==='W').length, Lc=s.filter(p=>p.res==='L').length, P=s.filter(p=>p.res==='P').length; return s.length?`${W}-${Lc}${P?'-'+P:''}`:'—'; };
   const t=totals()[id];
-  const weekRows = WEEKS.map(w=>{ const ps=enrich(w).filter(p=>p.player===id&&p.res!=='pending'); if(!ps.length) return ''; const W=ps.filter(p=>p.res==='W').reduce((a,p)=>a+p.w,0),Lc=ps.filter(p=>p.res==='L').reduce((a,p)=>a+p.w,0),P=ps.filter(p=>p.res==='P').reduce((a,p)=>a+p.w,0),pts=ps.reduce((a,p)=>a+p.pts,0); const lk=ps.find(p=>p.lock); return `<button class="row" onclick="location.hash='week/${w.week}'"><span class="name">${w.label}<small>${lk?`Lock: ${esc(lk.team)} ${lk.res==='W'?'hit':lk.res==='L'?'missed':'pushed'}`:'No lock graded'}</small></span><span class="num">${W}-${Lc}-${P}</span><span class="num pts">${pts>0?'+':''}${pts}</span></button>`; }).join('');
+  const weekRows = WEEKS.map(w=>{ const ps=enrich(w).filter(p=>p.player===id&&p.res!=='pending'); if(!ps.length) return ''; const W=ps.filter(p=>p.res==='W').reduce((a,p)=>a+p.w,0),Lc=ps.filter(p=>p.res==='L').reduce((a,p)=>a+p.w,0),P=ps.filter(p=>p.res==='P').reduce((a,p)=>a+p.w,0),pts=ps.reduce((a,p)=>a+p.pts,0); const lk=ps.find(p=>p.lock); return `<button class="row" onclick="location.hash='week/${w.week}'"><span class="name">${w.label}<small>${lk?`Lock: ${esc(pickName(lk))} ${lk.res==='W'?'hit':lk.res==='L'?'missed':'pushed'}`:'No lock graded'}</small></span><span class="num">${W}-${Lc}-${P}</span><span class="num pts">${pts>0?'+':''}${pts}</span></button>`; }).join('');
   let streak=0, sType=null; for(const p of all.slice().reverse()){ if(p.res==='P') continue; if(sType==null) sType=p.res; if(p.res!==sType) break; streak++; }
   return `<a class="back" href="#players">← All players</a>
   <h2>${esc(pl.name)}</h2>
@@ -256,27 +262,28 @@ function viewPlayer(id){
     <div class="stat"><div class="v">${streak?streak+(sType==='W'?'W':'L'):'—'}</div><div class="k">Current streak</div></div>
     <div class="stat"><div class="v">${rec(p=>p.game.league==='NFL')}</div><div class="k">NFL</div></div>
     <div class="stat"><div class="v">${rec(p=>p.game.league==='CFB')}</div><div class="k">College</div></div>
-    <div class="stat"><div class="v">${rec(p=>(p.official_line??p.submitted_line)<0)}</div><div class="k">Laying points</div></div>
-    <div class="stat"><div class="v">${rec(p=>(p.official_line??p.submitted_line)>0)}</div><div class="k">Taking points</div></div>
-    <div class="stat"><div class="v">${rec(p=>p.side==='home')}</div><div class="k">Home teams</div></div>
-    <div class="stat"><div class="v">${rec(p=>p.side==='away')}</div><div class="k">Road teams</div></div>
+    <div class="stat"><div class="v">${rec(p=>!isTotal(p)&&(p.official_line??p.submitted_line)<0)}</div><div class="k">Laying points</div></div>
+    <div class="stat"><div class="v">${rec(p=>!isTotal(p)&&(p.official_line??p.submitted_line)>0)}</div><div class="k">Taking points</div></div>
+    <div class="stat"><div class="v">${rec(p=>p.side==='over')}</div><div class="k">Overs</div></div>
+    <div class="stat"><div class="v">${rec(p=>p.side==='under')}</div><div class="k">Unders</div></div>
   </div>
   <div class="hist">${weekRows||'<div class="empty">Nothing graded yet.</div>'}</div>`;
 }
 
 /* proof */
-function proof(week,pid,gid){
-  const w=WEEKS.find(x=>x.week===week); const p=enrich(w).find(x=>x.player===pid&&x.game_id===gid); if(!p) return;
+function proof(week,idx){
+  const w=WEEKS.find(x=>x.week===week); const p=enrich(w)[idx]; if(!p) return; const pid=p.player;
   const g=p.game; const moved=p.official_line!=null && p.official_line!==p.submitted_line;
   const src=p.line_source||w.line_source;
-  const resText = p.res==='pending'?'Pending':p.res==='W'?`Covered${p.lock?', lock':''} (${p.pts>0?'+':''}${p.pts})`:p.res==='L'?`Missed${p.lock?', lock':''} (${p.pts})`:'Push (0)';
+  const resText = p.res==='pending'?'Pending':p.res==='W'?`${isTotal(p)?'Hit':'Covered'}${p.lock?', lock':''} (${p.pts>0?'+':''}${p.pts})`:p.res==='L'?`Missed${p.lock?', lock':''} (${p.pts})`:'Push (0)';
   document.getElementById('sheet').innerHTML=`<button class="close" onclick="closeSheet()" aria-label="Close">×</button>
-  <h3>${esc(byId[pid].name)}: ${esc(p.team)} ${fmtLine(p.official_line??p.submitted_line)}${p.lock?' <span class="lockbadge">LOCK</span>':''}</h3>
+  <h3>${esc(byId[pid].name)}: ${esc(pickName(p))} ${pickLine(p,p.official_line??p.submitted_line)}${p.lock?' <span class="lockbadge">LOCK</span>':''}</h3>
   <p class="sub">${g.league} · ${esc(g.away)} at ${esc(g.home)} · ${dt(g.kickoff)}</p>
   <div class="kv">
-    <div>Submitted</div><div><span class="big">${fmtLine(p.submitted_line)}</span> <span style="color:var(--muted)">${dt(p.submitted_at)}</span></div>
-    <div>Official line</div><div>${p.official_line==null?'<span style="color:var(--muted)">Not locked yet</span>':`<span class="big">${fmtLine(p.official_line)}</span> <span style="color:var(--muted)">${dt(p.locked_at)}</span>`}</div>
-    <div>Source</div><div>${src?`${cap(src.book)}, fetched ${dt(src.fetched_at)}${src.raw_file?`<br><span style="color:var(--muted);font-size:13px">${esc(src.raw_file)}</span>`:''}`:'<span style="color:var(--muted)">Pending midnight sweep</span>'}</div>
+    <div>Submitted</div><div><span class="big">${pickLine(p,p.submitted_line)}</span> <span style="color:var(--muted)">${dt(p.submitted_at)}</span></div>
+    <div>Official line</div><div>${p.official_line==null?'<span style="color:var(--muted)">Not locked yet</span>':`<span class="big">${pickLine(p,p.official_line)}</span> <span style="color:var(--muted)">${p.locked_at?dt(p.locked_at):''}</span>`}</div>
+    <div>Source</div><div>${src?`${cap(src.book)}, fetched ${dt(src.fetched_at)}${src.raw_file?`<br><span style="color:var(--muted);font-size:13px">${esc(src.raw_file)}</span>`:''}`:(p.official_line!=null?'<span style="color:var(--muted)">As submitted</span>':'<span style="color:var(--muted)">Pending midnight sweep</span>')}</div>
+    ${p.line_note?`<div>Note</div><div>${esc(p.line_note)}</div>`:''}
     <div>Final</div><div>${g.final?`${esc(g.away)} ${g.final.away}, ${esc(g.home)} ${g.final.home}`:'<span style="color:var(--muted)">Not played</span>'}</div>
     <div>Result</div><div class="big">${resText}</div>
   </div>

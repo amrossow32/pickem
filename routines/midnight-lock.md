@@ -8,8 +8,8 @@ Steps:
    If the week's status is not "open", or no pick has official_line == null, stop and make
    no commit.
 3. Call The Odds API with the key in $ODDS_API_KEY. Endpoints:
-   - NFL: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?regions=us&markets=spreads&bookmakers={official_book}&apiKey=$ODDS_API_KEY
-   - College: https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/?regions=us&markets=spreads&bookmakers={official_book}&apiKey=$ODDS_API_KEY
+   - NFL: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY
+   - College: https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY
    Save both raw responses, untouched, to data/raw/2026-w{NN}-midnight.json along with
    the exact UTC time you fetched them. This file is the proof. Never edit it later.
 4. For every pick in the week file that has official_line == null and whose game has not
@@ -19,6 +19,10 @@ Steps:
    set locked_at to the fetch time, and leave submitted_line exactly as it was.
    If official_line differs from submitted_line, that is expected and is what the dashboard
    shows as a line move. Do not round or "fix" anything.
+   Picks have a "market": "spread" picks take the team's spread from the spreads market;
+   "total" picks (side "over" or "under") take the game total from the totals market.
+   "spread_h1" (first-half) picks cannot be priced from this feed: put them in needs_review.
+   Only use odds for games whose commence_time is still in the future; never take a live line.
 5. If a picked game cannot be found at the official book, try the other books in the
    response, use that line, and record which book in a "line_note" field on the pick.
    If it cannot be found at all, leave official_line null and add it to a "needs_review"
