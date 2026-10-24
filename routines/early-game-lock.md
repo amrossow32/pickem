@@ -4,7 +4,7 @@ games that kick off before the Friday 11:59 PM PT deadline.
 
 Steps:
 1. Read data/league.json and open the current week's file in data/weeks/.
-2. Find picks where official_line == null and the game's kickoff is within the next 60 minutes
+2. Find picks where official_line == null and the game's kickoff is within the next 75 minutes
    or has already started. If there are none, stop and make no commit.
 3. For those games only, call The Odds API (same endpoints as midnight-lock.md, key in
    $ODDS_API_KEY), save the raw response to data/raw/2026-w{NN}-early-{HHMM}.json with the

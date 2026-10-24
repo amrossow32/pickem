@@ -5,6 +5,8 @@ pick in the current week and leave proof.
 Steps:
 1. Read data/league.json. Note official_book, current_week, and timezone.
 2. Open data/weeks/2026-w{current_week:02d}.json (for example 2026-w05.json).
+   If the week's status is not "open", or no pick has official_line == null, stop and make
+   no commit.
 3. Call The Odds API with the key in $ODDS_API_KEY. Endpoints:
    - NFL: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?regions=us&markets=spreads&bookmakers={official_book}&apiKey=$ODDS_API_KEY
    - College: https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/?regions=us&markets=spreads&bookmakers={official_book}&apiKey=$ODDS_API_KEY

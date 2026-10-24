@@ -3,6 +3,8 @@ Run this Monday night Pacific (and again Tuesday morning as a backstop) to grade
 
 Steps:
 1. Read data/league.json and open the current week's file in data/weeks/.
+   If the week's status is not "locked" (an open week has no official lines yet, and a
+   graded week is done), stop and make no commit.
 2. For every game in the week with final == null, fetch the final score. Use The Odds API
    scores endpoint (key in $ODDS_API_KEY):
    https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?daysFrom=3&apiKey=$ODDS_API_KEY
@@ -16,7 +18,7 @@ Steps:
 4. If every picked game now has a final (or is voided), set the week status to "graded".
    Otherwise leave it "locked".
 5. If status became "graded", increment current_week in data/league.json by 1 and create
-   the next week's file as {"week": N+1, "label": "Week N+1", "status": "open",
+   the next week's file as {"week": N+1, "label": "Week N+1", "status": "open", "sample": false,
    "games": [], "picks": [], "line_source": null}.
 6. Run `python3 build.py` and commit as "Week {N}: graded" (or "Week {N}: partial scores").
 

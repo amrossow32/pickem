@@ -268,6 +268,7 @@ function viewPlayer(id){
 function proof(week,pid,gid){
   const w=WEEKS.find(x=>x.week===week); const p=enrich(w).find(x=>x.player===pid&&x.game_id===gid); if(!p) return;
   const g=p.game; const moved=p.official_line!=null && p.official_line!==p.submitted_line;
+  const src=p.line_source||w.line_source;
   const resText = p.res==='pending'?'Pending':p.res==='W'?`Covered${p.lock?', lock':''} (${p.pts>0?'+':''}${p.pts})`:p.res==='L'?`Missed${p.lock?', lock':''} (${p.pts})`:'Push (0)';
   document.getElementById('sheet').innerHTML=`<button class="close" onclick="closeSheet()" aria-label="Close">×</button>
   <h3>${esc(byId[pid].name)}: ${esc(p.team)} ${fmtLine(p.official_line??p.submitted_line)}${p.lock?' <span class="lockbadge">LOCK</span>':''}</h3>
@@ -275,7 +276,7 @@ function proof(week,pid,gid){
   <div class="kv">
     <div>Submitted</div><div><span class="big">${fmtLine(p.submitted_line)}</span> <span style="color:var(--muted)">${dt(p.submitted_at)}</span></div>
     <div>Official line</div><div>${p.official_line==null?'<span style="color:var(--muted)">Not locked yet</span>':`<span class="big">${fmtLine(p.official_line)}</span> <span style="color:var(--muted)">${dt(p.locked_at)}</span>`}</div>
-    <div>Source</div><div>${w.line_source?`${cap(w.line_source.book)}, fetched ${dt(w.line_source.fetched_at)}${w.line_source.raw_file?`<br><span style="color:var(--muted);font-size:13px">${esc(w.line_source.raw_file)}</span>`:''}`:'<span style="color:var(--muted)">Pending midnight sweep</span>'}</div>
+    <div>Source</div><div>${src?`${cap(src.book)}, fetched ${dt(src.fetched_at)}${src.raw_file?`<br><span style="color:var(--muted);font-size:13px">${esc(src.raw_file)}</span>`:''}`:'<span style="color:var(--muted)">Pending midnight sweep</span>'}</div>
     <div>Final</div><div>${g.final?`${esc(g.away)} ${g.final.away}, ${esc(g.home)} ${g.final.home}`:'<span style="color:var(--muted)">Not played</span>'}</div>
     <div>Result</div><div class="big">${resText}</div>
   </div>
