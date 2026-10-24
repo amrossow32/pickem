@@ -192,6 +192,33 @@
    "kickoff": "2026-10-25T17:00:00Z",
    "final": null,
    "odds_event_id": "2bba7fde6f97d0e54403d53676e4ab63"
+  },
+  {
+   "id": "w7g21",
+   "league": "CFB",
+   "away": "Virginia Tech",
+   "home": "Clemson",
+   "kickoff": "2026-10-24T23:00:00Z",
+   "final": null,
+   "odds_event_id": "04db3b581ae63446a409f2ad30868e20"
+  },
+  {
+   "id": "w7g22",
+   "league": "NFL",
+   "away": "Steelers",
+   "home": "Saints",
+   "kickoff": "2026-10-25T13:30:00Z",
+   "final": null,
+   "odds_event_id": "2e710ea5a306b614f0f966e3d78732f8"
+  },
+  {
+   "id": "w7g23",
+   "league": "NFL",
+   "away": "Rams",
+   "home": "Raiders",
+   "kickoff": "2026-10-25T20:25:00Z",
+   "final": null,
+   "odds_event_id": "f7679cf18454e4d88a8f2b990c3f08ac"
   }
  ],
  "picks": [
@@ -851,10 +878,112 @@
     "fetched_at": "2026-10-24T05:14:59Z",
     "raw_file": "data/raw/2026-w07-lock-0515.json"
    }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g21",
+   "market": "spread",
+   "team": "Virginia Tech",
+   "side": "away",
+   "submitted_line": 2.5,
+   "submitted_at": null,
+   "official_line": 2.5,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g15",
+   "market": "spread",
+   "team": "Utah",
+   "side": "home",
+   "submitted_line": -6.5,
+   "submitted_at": null,
+   "official_line": -6.5,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g4",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 54.5,
+   "submitted_at": null,
+   "official_line": 53.5,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g22",
+   "market": "spread",
+   "team": "Saints",
+   "side": "home",
+   "submitted_line": 3,
+   "submitted_at": null,
+   "official_line": 3.0,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g7",
+   "market": "spread",
+   "team": "Buccaneers",
+   "side": "away",
+   "submitted_line": 3,
+   "submitted_at": null,
+   "official_line": 3.0,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w7g23",
+   "market": "spread",
+   "team": "Rams",
+   "side": "away",
+   "submitted_line": -3,
+   "submitted_at": null,
+   "official_line": -3.0,
+   "locked_at": "2026-10-24T05:24:27Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T05:24:27Z",
+    "raw_file": "data/raw/2026-w07-lock-0524.json"
+   }
   }
  ],
  "line_source": null,
  "needs_review": [
-  "Rick: no picks yet. Tobin: 2 picks and a lock still to come. G: no lock marked."
+  "Tobin: 2 picks and a lock still to come. G: no lock marked."
  ]
 }
