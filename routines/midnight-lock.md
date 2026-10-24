@@ -5,8 +5,9 @@ pick in the current week and leave proof.
 Steps:
 1. Read data/league.json. Note official_book, current_week, and timezone.
 2. Open data/weeks/2026-w{current_week:02d}.json (for example 2026-w05.json).
-   If the week's status is not "open", or no pick has official_line == null, stop and make
-   no commit.
+   If the week's status is not "open", stop and make no commit. If every pick already has an
+   official_line (they were locked as they came in), skip steps 3 to 5 and go straight to
+   step 6: the week must still be marked locked or it will never be graded.
 3. Call The Odds API with the key in $ODDS_API_KEY. Endpoints:
    - NFL: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY
    - College: https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY
@@ -27,7 +28,8 @@ Steps:
    response, use that line, and record which book in a "line_note" field on the pick.
    If it cannot be found at all, leave official_line null and add it to a "needs_review"
    list at the top level of the week file so the commissioner sees it.
-6. Set the week's "line_source" to {book, fetched_at, raw_file} and status to "locked".
+6. Set the week's "line_source" to {book, fetched_at, raw_file} (if no fetch was needed, use
+   {book, fetched_at: now, raw_file: null, note: "all picks locked individually"}) and status to "locked".
    Picks already locked by the early-game routine keep their existing values.
 7. Run `python3 build.py` so docs/index.html is rebuilt. Commit everything with the message
    "Week {N}: lines locked at {fetch time PT}".
