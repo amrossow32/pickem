@@ -435,7 +435,7 @@
    "submitted_at": null,
    "official_line": 49.5,
    "locked_at": "2026-10-24T05:14:59Z",
-   "lock": false,
+   "lock": true,
    "line_source": {
     "book": "draftkings",
     "fetched_at": "2026-10-24T05:14:59Z",
@@ -984,6 +984,6 @@
  ],
  "line_source": null,
  "needs_review": [
-  "Tobin: 2 picks and a lock still to come. G: no lock marked."
+  "Tobin: 2 picks and a lock still to come."
  ]
 }
