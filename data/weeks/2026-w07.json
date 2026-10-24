@@ -1006,7 +1006,7 @@
     "fetched_at": "2026-10-24T08:49:44Z",
     "raw_file": "data/raw/2026-w07-lock-0849.json"
    },
-   "line_note": "Submitted after the midnight lock; locked at the line when received."
+   "line_note": "Submitted after midnight; graded at the midnight line. DraftKings had this same line at 10:14 PM and 1:49 AM PT, so it is treated as the midnight line."
   },
   {
    "player": "tobin",
@@ -1024,7 +1024,7 @@
     "fetched_at": "2026-10-24T08:49:44Z",
     "raw_file": "data/raw/2026-w07-lock-0849.json"
    },
-   "line_note": "Submitted after the midnight lock; locked at the line when received."
+   "line_note": "Submitted after midnight; graded at the midnight line. DraftKings had this same line at 10:14 PM and 1:49 AM PT, so it is treated as the midnight line."
   }
  ],
  "line_source": {
