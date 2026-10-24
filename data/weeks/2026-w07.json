@@ -219,6 +219,15 @@
    "kickoff": "2026-10-25T20:25:00Z",
    "final": null,
    "odds_event_id": "f7679cf18454e4d88a8f2b990c3f08ac"
+  },
+  {
+   "id": "w7g24",
+   "league": "NFL",
+   "away": "Broncos",
+   "home": "Cardinals",
+   "kickoff": "2026-10-25T20:05:00Z",
+   "final": null,
+   "odds_event_id": "436119bb3ccdaa6ed7808aa3ebd82b76"
   }
  ],
  "picks": [
@@ -980,6 +989,42 @@
     "fetched_at": "2026-10-24T05:24:27Z",
     "raw_file": "data/raw/2026-w07-lock-0524.json"
    }
+  },
+  {
+   "player": "tobin",
+   "game_id": "w7g5",
+   "market": "spread",
+   "team": "Packers",
+   "side": "away",
+   "submitted_line": 3.5,
+   "submitted_at": "2026-10-24T08:49:44Z",
+   "official_line": 3.0,
+   "locked_at": "2026-10-24T08:49:44Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T08:49:44Z",
+    "raw_file": "data/raw/2026-w07-lock-0849.json"
+   },
+   "line_note": "Submitted after the midnight lock; locked at the line when received."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w7g24",
+   "market": "spread",
+   "team": "Cardinals",
+   "side": "home",
+   "submitted_line": 4.5,
+   "submitted_at": "2026-10-24T08:49:44Z",
+   "official_line": 4.5,
+   "locked_at": "2026-10-24T08:49:44Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-10-24T08:49:44Z",
+    "raw_file": "data/raw/2026-w07-lock-0849.json"
+   },
+   "line_note": "Submitted after the midnight lock; locked at the line when received."
   }
  ],
  "line_source": {
@@ -988,7 +1033,5 @@
   "raw_file": null,
   "note": "all picks locked individually"
  },
- "needs_review": [
-  "Tobin: 2 picks and a lock still to come."
- ]
+ "needs_review": []
 }
