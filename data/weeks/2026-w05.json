@@ -1,0 +1,114 @@
+{
+ "week": 5,
+ "label": "Week 5",
+ "status": "open",
+ "sample": true,
+ "games": [
+  {
+   "id": "w5g1",
+   "league": "NFL",
+   "away": "Bills",
+   "home": "Chiefs",
+   "kickoff": "2026-10-11T13:25:00-07:00",
+   "final": null
+  },
+  {
+   "id": "w5g2",
+   "league": "NFL",
+   "away": "Eagles",
+   "home": "Lions",
+   "kickoff": "2026-10-11T10:00:00-07:00",
+   "final": null
+  },
+  {
+   "id": "w5g3",
+   "league": "CFB",
+   "away": "Ohio State",
+   "home": "Penn State",
+   "kickoff": "2026-10-10T16:30:00-07:00",
+   "final": null
+  },
+  {
+   "id": "w5g4",
+   "league": "CFB",
+   "away": "Texas",
+   "home": "Oklahoma",
+   "kickoff": "2026-10-10T12:30:00-07:00",
+   "final": null
+  },
+  {
+   "id": "w5g5",
+   "league": "NFL",
+   "away": "Ravens",
+   "home": "Bengals",
+   "kickoff": "2026-10-11T10:00:00-07:00",
+   "final": null
+  },
+  {
+   "id": "w5g6",
+   "league": "CFB",
+   "away": "LSU",
+   "home": "Ole Miss",
+   "kickoff": "2026-10-10T19:30:00-07:00",
+   "final": null
+  }
+ ],
+ "picks": [
+  {
+   "player": "andrew",
+   "game_id": "w5g1",
+   "team": "Bills",
+   "side": "away",
+   "submitted_line": 2.5,
+   "submitted_at": "2026-10-08T18:40:00-07:00",
+   "official_line": null,
+   "locked_at": null,
+   "lock": true
+  },
+  {
+   "player": "andrew",
+   "game_id": "w5g3",
+   "team": "Penn State",
+   "side": "home",
+   "submitted_line": 3,
+   "submitted_at": "2026-10-08T18:40:00-07:00",
+   "official_line": null,
+   "locked_at": null,
+   "lock": false
+  },
+  {
+   "player": "andrew",
+   "game_id": "w5g4",
+   "team": "Texas",
+   "side": "away",
+   "submitted_line": -4.5,
+   "submitted_at": "2026-10-08T18:40:00-07:00",
+   "official_line": null,
+   "locked_at": null,
+   "lock": false
+  },
+  {
+   "player": "p3",
+   "game_id": "w5g2",
+   "team": "Lions",
+   "side": "home",
+   "submitted_line": -1,
+   "submitted_at": "2026-10-09T08:12:00-07:00",
+   "official_line": null,
+   "locked_at": null,
+   "lock": false
+  },
+  {
+   "player": "p3",
+   "game_id": "w5g6",
+   "team": "Ole Miss",
+   "side": "home",
+   "submitted_line": -6.5,
+   "submitted_at": "2026-10-09T08:12:00-07:00",
+   "official_line": null,
+   "locked_at": null,
+   "lock": true
+  }
+ ],
+ "line_source": null
+}

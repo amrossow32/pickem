@@ -1,0 +1,90 @@
+{
+  "season": 2026,
+  "name": "The Pick'em",
+  "official_book": "draftkings",
+  "timezone": "America/Los_Angeles",
+  "deadline_rule": "Picks due Friday 11:59 PM PT. Games that kick off before that lock at kickoff.",
+  "scoring": {
+    "pick_win": 1,
+    "pick_loss": -1,
+    "push": 0,
+    "lock_multiplier": 2,
+    "picks_per_week": 6
+  },
+  "current_week": 7,
+  "players": [
+    {
+      "id": "tobin",
+      "name": "Tobin",
+      "carryover": {
+        "W": 30,
+        "L": 18,
+        "P": 1
+      }
+    },
+    {
+      "id": "tally",
+      "name": "Tally",
+      "carryover": {
+        "W": 24,
+        "L": 24,
+        "P": 1
+      }
+    },
+    {
+      "id": "g",
+      "name": "G",
+      "carryover": {
+        "W": 28,
+        "L": 20,
+        "P": 1
+      }
+    },
+    {
+      "id": "rick",
+      "name": "Rick",
+      "carryover": {
+        "W": 28,
+        "L": 20,
+        "P": 1
+      }
+    },
+    {
+      "id": "dan",
+      "name": "Dan",
+      "carryover": {
+        "W": 29,
+        "L": 18,
+        "P": 2
+      }
+    },
+    {
+      "id": "nik",
+      "name": "Nik",
+      "carryover": {
+        "W": 35,
+        "L": 13,
+        "P": 1
+      }
+    },
+    {
+      "id": "doe",
+      "name": "Doe",
+      "carryover": {
+        "W": 26,
+        "L": 23,
+        "P": 0
+      }
+    },
+    {
+      "id": "rossow",
+      "name": "Rossow",
+      "carryover": {
+        "W": 19,
+        "L": 28,
+        "P": 2
+      }
+    }
+  ],
+  "carryover_through_week": 6
+}
