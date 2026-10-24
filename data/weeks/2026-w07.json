@@ -396,8 +396,7 @@
     "book": "draftkings",
     "fetched_at": "2026-10-24T05:14:59Z",
     "raw_file": "data/raw/2026-w07-lock-0515.json"
-   },
-   "line_note": "Written as BSU. Read as Boise State; Ball State is also -14.5 this week."
+   }
   },
   {
    "player": "g",
@@ -856,10 +855,6 @@
  ],
  "line_source": null,
  "needs_review": [
-  "Dan: Bengals submitted at +1.5 but DraftKings has them -1.5. Confirm the pick is the Bengals.",
-  "G: BSU read as Boise State (-14.5). Ball State is also -14.5 this week.",
-  "Doe: Texas Tech 11.5 read as Texas Tech -11.5.",
-  "Tally: GB/DET o53.3 read as o53.5.",
   "Rick: no picks yet. Tobin: 2 picks and a lock still to come. G: no lock marked."
  ]
 }
