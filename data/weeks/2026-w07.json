@@ -1,7 +1,7 @@
 {
  "week": 7,
  "label": "Week 7",
- "status": "open",
+ "status": "locked",
  "sample": false,
  "games": [
   {
@@ -982,7 +982,12 @@
    }
   }
  ],
- "line_source": null,
+ "line_source": {
+  "book": "draftkings",
+  "fetched_at": "2026-10-24T07:10:28Z",
+  "raw_file": null,
+  "note": "all picks locked individually"
+ },
  "needs_review": [
   "Tobin: 2 picks and a lock still to come."
  ]
