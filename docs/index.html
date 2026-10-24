@@ -198,7 +198,7 @@ function viewStandings(){
     <div class="row head"><span></span><span>Season</span><span class="num" style="font-size:13px;font-family:var(--body)">W-L-P</span><span class="num" style="font-size:13px;font-family:var(--body)">Lock</span><span class="num" style="font-size:13px;font-family:var(--body)">Pts</span></div>
     ${st.map((p,i)=>`<button class="row ${i===0?'lead':''}" onclick="location.hash='players/${p.id}'">
       <span class="rank">${i+1}</span>
-      <span class="name">${esc(p.name)}<small>${p.pts===lead?(st.filter(x=>x.pts===lead).length>1?'Tied for lead':'Leader'):`${lead-p.pts} back`}</small></span>
+      <span class="name">${esc(p.name)}<small>${p.pts===lead?(st.filter(x=>x.pts===lead).length>1?'Tied for lead':'Leader'):`${(lead-p.pts)/2} GB`}</small></span>
       <span class="num">${p.W}-${p.L}-${p.P}</span>
       <span class="num">${p.lockW}-${p.lockL}${p.lockP?'-'+p.lockP:''}</span>
       <span class="num pts">${p.pts>0?'+':''}${p.pts}</span>
