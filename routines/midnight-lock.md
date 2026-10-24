@@ -23,7 +23,7 @@ Steps:
    list at the top level of the week file so the commissioner sees it.
 6. Set the week's "line_source" to {book, fetched_at, raw_file} and status to "locked".
    Picks already locked by the early-game routine keep their existing values.
-7. Run `python3 build.py` so dist/index.html is rebuilt. Commit everything with the message
+7. Run `python3 build.py` so docs/index.html is rebuilt. Commit everything with the message
    "Week {N}: lines locked at {fetch time PT}".
 
 Rules: never change a submitted_line, a team, or a lock flag. Never delete a pick. If

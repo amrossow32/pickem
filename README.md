@@ -2,14 +2,14 @@
 
 Six picks a week against the spread, NFL or college, one lock worth double.
 Picks due Friday 11:59 PM PT. Lines lock automatically at midnight with proof.
-Graded automatically Monday night. Dashboard: dist/index.html (served by GitHub Pages).
+Graded automatically Monday night. Dashboard: docs/index.html (served by GitHub Pages).
 
 ## One-time setup (about 20 minutes, no coding)
 
 1. **GitHub.** Create a free account if you don't have one, create a new private
    repo called `pickem`, and upload this folder's contents to it.
 2. **GitHub Pages.** Repo Settings > Pages > Source: Deploy from a branch > `main`,
-   folder `/dist`. Save. In a minute you get a link like
+   folder `/docs`. Save. In a minute you get a link like
    `https://yourname.github.io/pickem/`. That's the dashboard link for the group.
    (Private repos need GitHub Pro for Pages. A public repo is fine too; there's
    nothing sensitive in here, just picks and lines.)
@@ -53,4 +53,4 @@ Paste past weeks in the same format plus the lines and finals, and say
 - `data/league.json` : players, scoring, book, current week
 - `data/weeks/2026-wNN.json` : games, picks, lines, finals for one week
 - `data/raw/` : untouched API responses with timestamps
-- `site/template.html` + `build.py` -> `dist/index.html`
+- `site/template.html` + `build.py` -> `docs/index.html`
