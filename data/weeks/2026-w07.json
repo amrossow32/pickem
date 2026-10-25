@@ -46,7 +46,10 @@
    "away": "Ole Miss",
    "home": "Texas",
    "kickoff": "2026-10-24T23:30:00Z",
-   "final": null,
+   "final": {
+    "away": 27,
+    "home": 34
+   },
    "odds_event_id": "df510525b83238b6e856c80c353bb32a"
   },
   {
@@ -64,7 +67,10 @@
    "away": "Colts",
    "home": "Vikings",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 10,
+    "home": 16
+   },
    "odds_event_id": "f3992ad4496724baf7dcd1ef58245d6b"
   },
   {
@@ -73,7 +79,10 @@
    "away": "Buccaneers",
    "home": "Panthers",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 43,
+    "home": 13
+   },
    "odds_event_id": "2823e986597c449ab94126cd5ed3fae9"
   },
   {
@@ -82,7 +91,10 @@
    "away": "BYU",
    "home": "UCF",
    "kickoff": "2026-10-24T19:30:00Z",
-   "final": null,
+   "final": {
+    "away": 31,
+    "home": 39
+   },
    "odds_event_id": "174cf7d3d434eeaada92afb534fb2557"
   },
   {
@@ -91,7 +103,10 @@
    "away": "Boise State",
    "home": "Washington State",
    "kickoff": "2026-10-24T22:00:00Z",
-   "final": null,
+   "final": {
+    "away": 31,
+    "home": 10
+   },
    "odds_event_id": "8a67420bfc49f0bcf8c92bc4c08be602"
   },
   {
@@ -100,7 +115,10 @@
    "away": "49ers",
    "home": "Falcons",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 29
+   },
    "odds_event_id": "b1be064fb52a198a62109c279e7ab24c"
   },
   {
@@ -118,7 +136,10 @@
    "away": "Dolphins",
    "home": "Jets",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 28,
+    "home": 25
+   },
    "odds_event_id": "be5dd120ca08b43d647b6caa8953500a"
   },
   {
@@ -127,7 +148,10 @@
    "away": "Oregon",
    "home": "Illinois",
    "kickoff": "2026-10-24T19:00:00Z",
-   "final": null,
+   "final": {
+    "away": 10,
+    "home": 21
+   },
    "odds_event_id": "0f773ec5cb1e5b41f52f2bf8dbc4f182"
   },
   {
@@ -136,7 +160,10 @@
    "away": "Bengals",
    "home": "Ravens",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 35,
+    "home": 13
+   },
    "odds_event_id": "550ec5290f935d311995affbcb0b5c79"
   },
   {
@@ -145,7 +172,10 @@
    "away": "Houston",
    "home": "Utah",
    "kickoff": "2026-10-25T02:15:00Z",
-   "final": null,
+   "final": {
+    "away": 13,
+    "home": 21
+   },
    "odds_event_id": "47595bd2a188e4dab8a27dce97c5b45d"
   },
   {
@@ -163,7 +193,10 @@
    "away": "Texas Tech",
    "home": "Cincinnati",
    "kickoff": "2026-10-24T16:00:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 37
+   },
    "odds_event_id": "7a2b82b534f197acfe4913fcdaa86792"
   },
   {
@@ -172,7 +205,10 @@
    "away": "Texas A&M",
    "home": "Alabama",
    "kickoff": "2026-10-24T19:30:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 31
+   },
    "odds_event_id": "173057d32ff5946d42566a0d164de287"
   },
   {
@@ -190,7 +226,10 @@
    "away": "Giants",
    "home": "Texans",
    "kickoff": "2026-10-25T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 27,
+    "home": 21
+   },
    "odds_event_id": "2bba7fde6f97d0e54403d53676e4ab63"
   },
   {
@@ -199,7 +238,10 @@
    "away": "Virginia Tech",
    "home": "Clemson",
    "kickoff": "2026-10-24T23:00:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 16
+   },
    "odds_event_id": "04db3b581ae63446a409f2ad30868e20"
   },
   {
@@ -208,7 +250,10 @@
    "away": "Steelers",
    "home": "Saints",
    "kickoff": "2026-10-25T13:30:00Z",
-   "final": null,
+   "final": {
+    "away": 16,
+    "home": 10
+   },
    "odds_event_id": "2e710ea5a306b614f0f966e3d78732f8"
   },
   {
