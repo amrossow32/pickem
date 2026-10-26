@@ -130,7 +130,10 @@
    "away": "Chiefs",
    "home": "Seahawks",
    "kickoff": "2026-10-26T00:20:00Z",
-   "final": null,
+   "final": {
+    "away": 3,
+    "home": 20
+   },
    "odds_event_id": "176d474ed8b2bbf1eb4d7e9c56b4bf22"
   },
   {
