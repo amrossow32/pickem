@@ -58,7 +58,10 @@
    "away": "Packers",
    "home": "Lions",
    "kickoff": "2026-10-25T20:25:00Z",
-   "final": null,
+   "final": {
+    "away": 17,
+    "home": 20
+   },
    "odds_event_id": "e8e5715eefb6a9ce64765e9ddf49c0cc"
   },
   {
@@ -262,7 +265,10 @@
    "away": "Rams",
    "home": "Raiders",
    "kickoff": "2026-10-25T20:25:00Z",
-   "final": null,
+   "final": {
+    "away": 35,
+    "home": 21
+   },
    "odds_event_id": "f7679cf18454e4d88a8f2b990c3f08ac"
   },
   {
@@ -271,7 +277,10 @@
    "away": "Broncos",
    "home": "Cardinals",
    "kickoff": "2026-10-25T20:05:00Z",
-   "final": null,
+   "final": {
+    "away": 30,
+    "home": 16
+   },
    "odds_event_id": "436119bb3ccdaa6ed7808aa3ebd82b76"
   }
  ],
