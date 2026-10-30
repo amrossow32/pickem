@@ -3,7 +3,34 @@
  "label": "Week 8",
  "status": "open",
  "sample": false,
- "games": [],
- "picks": [],
+ "games": [
+  {
+   "id": "w8g1",
+   "league": "NFL",
+   "away": "Panthers",
+   "home": "Packers",
+   "kickoff": "2026-10-30T00:15:32Z",
+   "final": {
+    "away": 19,
+    "home": 27
+   },
+   "odds_event_id": "ab2865e9f2d4b012de8bc6fb6de11a7c"
+  }
+ ],
+ "picks": [
+  {
+   "player": "g",
+   "game_id": "w8g1",
+   "market": "spread",
+   "team": "Packers",
+   "side": "home",
+   "submitted_line": -3.5,
+   "submitted_at": null,
+   "official_line": -3.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Game was played before picks were loaded; graded at the line as submitted."
+  }
+ ],
  "line_source": null
 }
