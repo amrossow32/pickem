@@ -1,7 +1,7 @@
 {
  "week": 8,
  "label": "Week 8",
- "status": "open",
+ "status": "locked",
  "sample": false,
  "games": [
   {
@@ -32,5 +32,13 @@
    "line_note": "Game was played before picks were loaded; graded at the line as submitted."
   }
  ],
- "line_source": null
+ "line_source": {
+  "book": "draftkings",
+  "fetched_at": "2026-10-31T07:06:49Z",
+  "raw_file": "data/raw/2026-w08-midnight.json",
+  "note": "Midnight snapshot saved so late picks can be graded at the midnight line."
+ },
+ "needs_review": [
+  "Only G's Thursday pick is in. Everyone else's Week 8 picks are still to come; they will be graded at the midnight line in data/raw/2026-w08-midnight.json."
+ ]
 }
