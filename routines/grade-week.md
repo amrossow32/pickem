@@ -16,8 +16,10 @@ Steps:
 3. Write final: {away, home} for completed games. Spreads and totals both grade from this.
    First-half picks and picks with a manual_result are left alone. Do not compute results yourself; the
    dashboard grades from final scores and official lines.
-4. If every picked game now has a final (or is voided), set the week status to "graded".
-   Otherwise leave it "locked".
+4. If every picked game now has a final (or is voided), AND it is after the week's Monday night
+   game (Monday 9 PM Pacific or later), AND needs_review does not say picks are still to come,
+   set the week status to "graded". Otherwise leave it "locked": a week with only early picks
+   loaded must not be closed just because those few games are final.
 5. If status became "graded", increment current_week in data/league.json by 1 and create
    the next week's file as {"week": N+1, "label": "Week N+1", "status": "open", "sample": false,
    "games": [], "picks": [], "line_source": null}.
