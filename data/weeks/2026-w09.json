@@ -219,6 +219,15 @@
    "kickoff": "2026-11-07T20:00:00Z",
    "final": null,
    "odds_event_id": "208e919ada4f5cf6d27af719879d1880"
+  },
+  {
+   "id": "w9g24",
+   "league": "CFB",
+   "away": "BYU",
+   "home": "Utah",
+   "kickoff": "2026-11-07T17:00:00Z",
+   "final": null,
+   "odds_event_id": "8db5a11826fc84a5a6506c9b85979e70"
   }
  ],
  "picks": [
@@ -997,6 +1006,24 @@
     "fetched_at": "2026-11-07T06:42:53Z",
     "raw_file": "data/raw/2026-w09-lock-0642.json"
    }
+  },
+  {
+   "player": "nik",
+   "game_id": "w9g24",
+   "market": "spread",
+   "team": "BYU",
+   "side": "away",
+   "submitted_line": 4.5,
+   "submitted_at": "2026-11-07T17:11:08Z",
+   "official_line": 4.5,
+   "locked_at": "2026-11-07T08:06:34Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-07T08:06:34Z",
+    "raw_file": "data/raw/2026-w09-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line."
   }
  ],
  "line_source": {
@@ -1005,7 +1032,5 @@
   "raw_file": "data/raw/2026-w09-midnight.json",
   "note": "All picks were locked as they came in; midnight snapshot saved for late picks."
  },
- "needs_review": [
-  "Nik has 5 picks (6 expected)."
- ]
+ "needs_review": []
 }
