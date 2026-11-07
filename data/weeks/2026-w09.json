@@ -34,7 +34,10 @@
    "away": "TCU",
    "home": "Arizona",
    "kickoff": "2026-11-07T03:30:00Z",
-   "final": null,
+   "final": {
+    "away": 28,
+    "home": 29
+   },
    "odds_event_id": "722ed661705df150a38e7786949ce241"
   },
   {
@@ -127,7 +130,10 @@
    "away": "Texas",
    "home": "Missouri",
    "kickoff": "2026-11-07T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 34,
+    "home": 20
+   },
    "odds_event_id": "43a67a478177d0dc6ef141aacf2bfd2a"
   },
   {
@@ -226,7 +232,10 @@
    "away": "BYU",
    "home": "Utah",
    "kickoff": "2026-11-07T17:00:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 28
+   },
    "odds_event_id": "8db5a11826fc84a5a6506c9b85979e70"
   }
  ],
