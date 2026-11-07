@@ -6,8 +6,9 @@ Steps:
 1. Read data/league.json. Note official_book, current_week, and timezone.
 2. Open data/weeks/2026-w{current_week:02d}.json (for example 2026-w05.json).
    If the week's status is not "open", stop and make no commit. If every pick already has an
-   official_line (they were locked as they came in), skip steps 3 to 5 and go straight to
-   step 6: the week must still be marked locked or it will never be graded.
+   official_line (they were locked as they came in, or none are loaded yet), still do step 3
+   so a midnight snapshot is saved for late picks, skip steps 4 and 5, and go to step 6: the
+   week must still be marked locked or it will never be graded.
 3. Call The Odds API with the key in $ODDS_API_KEY. Endpoints:
    - NFL: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY
    - College: https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/?regions=us&markets=spreads,totals&bookmakers={official_book}&apiKey=$ODDS_API_KEY

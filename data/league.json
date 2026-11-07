@@ -11,32 +11,32 @@
     "lock_multiplier": 2,
     "picks_per_week": 6
   },
-  "current_week": 8,
+  "current_week": 9,
   "players": [
     {
       "id": "tobin",
       "name": "Tobin",
       "carryover": {
-        "W": 30,
-        "L": 18,
-        "P": 1
+        "W": 35,
+        "L": 25,
+        "P": 3
       }
     },
     {
       "id": "tally",
       "name": "Tally",
       "carryover": {
-        "W": 24,
-        "L": 24,
-        "P": 1
+        "W": 32,
+        "L": 29,
+        "P": 2
       }
     },
     {
       "id": "g",
       "name": "G",
       "carryover": {
-        "W": 28,
-        "L": 20,
+        "W": 36,
+        "L": 26,
         "P": 1
       }
     },
@@ -44,8 +44,8 @@
       "id": "rick",
       "name": "Rick",
       "carryover": {
-        "W": 28,
-        "L": 20,
+        "W": 40,
+        "L": 22,
         "P": 1
       }
     },
@@ -53,8 +53,8 @@
       "id": "dan",
       "name": "Dan",
       "carryover": {
-        "W": 29,
-        "L": 18,
+        "W": 35,
+        "L": 26,
         "P": 2
       }
     },
@@ -62,8 +62,8 @@
       "id": "nik",
       "name": "Nik",
       "carryover": {
-        "W": 35,
-        "L": 13,
+        "W": 44,
+        "L": 18,
         "P": 1
       }
     },
@@ -71,8 +71,8 @@
       "id": "doe",
       "name": "Doe",
       "carryover": {
-        "W": 26,
-        "L": 23,
+        "W": 30,
+        "L": 33,
         "P": 0
       }
     },
@@ -80,11 +80,11 @@
       "id": "rossow",
       "name": "Rossow",
       "carryover": {
-        "W": 19,
-        "L": 28,
+        "W": 27,
+        "L": 34,
         "P": 2
       }
     }
   ],
-  "carryover_through_week": 6
+  "carryover_through_week": 8
 }

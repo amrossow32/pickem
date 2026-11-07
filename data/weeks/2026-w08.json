@@ -1,7 +1,7 @@
 {
  "week": 8,
  "label": "Week 8",
- "status": "locked",
+ "status": "graded",
  "sample": false,
  "games": [
   {
@@ -38,7 +38,6 @@
   "raw_file": "data/raw/2026-w08-midnight.json",
   "note": "Midnight snapshot saved so late picks can be graded at the midnight line."
  },
- "needs_review": [
-  "Only G's Thursday pick is in. Everyone else's Week 8 picks are still to come; they will be graded at the midnight line in data/raw/2026-w08-midnight.json."
- ]
+ "needs_review": [],
+ "note": "Week 8 was tracked in the group's note, not here. Its results are included in the records carried over through Week 8; only G's Thursday pick was loaded."
 }

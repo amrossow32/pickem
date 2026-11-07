@@ -155,8 +155,9 @@ function totals(filter){
     t[p.id]={W,L:Lc,P,pts:W*S.pick_win+Lc*S.pick_loss,lockW:0,lockL:0,lockP:0,weeks:0}; });
   WEEKS.filter(filter||(()=>true)).forEach(w=>{
     const played=new Set();
+    const inCarry=!filter && w.week<=(L.carryover_through_week||0);
     enrich(w).forEach(p=>{ if(p.res==='pending') return; const r=t[p.player]; if(!r) return;
-      r[p.res]+=p.w; r.pts+=p.pts; played.add(p.player);
+      if(!inCarry){ r[p.res]+=p.w; r.pts+=p.pts; } played.add(p.player);
       if(p.lock){ r['lock'+p.res]++; }
     });
     played.forEach(id=>t[id].weeks++);
