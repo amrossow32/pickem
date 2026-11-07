@@ -210,6 +210,15 @@
    "kickoff": "2026-11-09T01:20:00Z",
    "final": null,
    "odds_event_id": "9760d8f19f84bfee300a74ceb656c95d"
+  },
+  {
+   "id": "w9g23",
+   "league": "CFB",
+   "away": "Texas A&M",
+   "home": "South Carolina",
+   "kickoff": "2026-11-07T20:00:00Z",
+   "final": null,
+   "odds_event_id": "208e919ada4f5cf6d27af719879d1880"
   }
  ],
  "picks": [
@@ -971,10 +980,27 @@
     "fetched_at": "2026-11-07T06:32:38Z",
     "raw_file": "data/raw/2026-w09-lock-0632.json"
    }
+  },
+  {
+   "player": "rick",
+   "game_id": "w9g23",
+   "market": "spread",
+   "team": "South Carolina",
+   "side": "home",
+   "submitted_line": -7,
+   "submitted_at": "2026-11-07T06:42:53Z",
+   "official_line": -7.0,
+   "locked_at": "2026-11-07T06:42:53Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-07T06:42:53Z",
+    "raw_file": "data/raw/2026-w09-lock-0642.json"
+   }
   }
  ],
  "line_source": null,
  "needs_review": [
-  "Rick and Nik have 5 picks each (6 expected)."
+  "Nik has 5 picks (6 expected)."
  ]
 }
