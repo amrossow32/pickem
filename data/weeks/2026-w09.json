@@ -142,7 +142,10 @@
    "away": "Georgia",
    "home": "Ole Miss",
    "kickoff": "2026-11-08T00:30:00Z",
-   "final": null,
+   "final": {
+    "away": 42,
+    "home": 7
+   },
    "odds_event_id": "0842fcd69fdf5061f6751f876ead09f2"
   },
   {
@@ -151,7 +154,10 @@
    "away": "Iowa",
    "home": "Northwestern",
    "kickoff": "2026-11-08T00:30:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 10
+   },
    "odds_event_id": "61cf0b043d9d95f0a73d0838ff08a24b"
   },
   {
@@ -193,7 +199,10 @@
    "away": "Kentucky",
    "home": "Tennessee",
    "kickoff": "2026-11-07T23:15:00Z",
-   "final": null,
+   "final": {
+    "away": 6,
+    "home": 34
+   },
    "odds_event_id": "72cab2217ae57cbb00928eab05eb244e"
   },
   {
@@ -211,7 +220,10 @@
    "away": "Miami",
    "home": "Notre Dame",
    "kickoff": "2026-11-08T00:30:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 31
+   },
    "odds_event_id": "4aac00e6cc06b8905659f911419540d2"
   },
   {
