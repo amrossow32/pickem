@@ -46,7 +46,10 @@
    "away": "Rams",
    "home": "Commanders",
    "kickoff": "2026-11-08T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 13
+   },
    "odds_event_id": "89de07377e0aa8ffaa2ae6a7dc0855cc"
   },
   {
@@ -55,7 +58,10 @@
    "away": "Browns",
    "home": "Saints",
    "kickoff": "2026-11-08T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 22,
+    "home": 23
+   },
    "odds_event_id": "e571bab6736f9338130a78a4f75c3231"
   },
   {
@@ -64,7 +70,10 @@
    "away": "Bengals",
    "home": "Falcons",
    "kickoff": "2026-11-08T14:30:00Z",
-   "final": null,
+   "final": {
+    "away": 34,
+    "home": 17
+   },
    "odds_event_id": "dc56d980f527ffeef89940133b211b13"
   },
   {
@@ -73,7 +82,10 @@
    "away": "Broncos",
    "home": "Panthers",
    "kickoff": "2026-11-08T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 26,
+    "home": 21
+   },
    "odds_event_id": "014282b888c741b7d70c857c09f40aa7"
   },
   {
@@ -82,7 +94,10 @@
    "away": "Lions",
    "home": "Dolphins",
    "kickoff": "2026-11-08T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 19,
+    "home": 9
+   },
    "odds_event_id": "44d8c37868b700e90f816db7c5df5cdd"
   },
   {
@@ -166,7 +181,10 @@
    "away": "West Virginia",
    "home": "Texas Tech",
    "kickoff": "2026-11-08T02:30:00Z",
-   "final": null,
+   "final": {
+    "away": 48,
+    "home": 53
+   },
    "odds_event_id": "6bfae12b9d44d12ca7dde4f4f4aedc7d"
   },
   {
@@ -211,7 +229,10 @@
    "away": "Cowboys",
    "home": "Colts",
    "kickoff": "2026-11-08T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 27,
+    "home": 23
+   },
    "odds_event_id": "415fc42e72888c63e82f7bce24c65391"
   },
   {
