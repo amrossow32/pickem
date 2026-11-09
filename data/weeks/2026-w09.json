@@ -106,7 +106,10 @@
    "away": "Cardinals",
    "home": "Seahawks",
    "kickoff": "2026-11-08T21:25:00Z",
-   "final": null,
+   "final": {
+    "away": 3,
+    "home": 17
+   },
    "odds_event_id": "240e23b02b1e3fef655d04a286b5a623"
   },
   {
@@ -115,7 +118,10 @@
    "away": "Raiders",
    "home": "49ers",
    "kickoff": "2026-11-08T21:05:00Z",
-   "final": null,
+   "final": {
+    "away": 17,
+    "home": 38
+   },
    "odds_event_id": "ac9d38a18d5c92814233a31aa9a48d78"
   },
   {
