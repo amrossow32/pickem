@@ -259,7 +259,10 @@
    "away": "Buccaneers",
    "home": "Bears",
    "kickoff": "2026-11-09T01:20:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 27
+   },
    "odds_event_id": "9760d8f19f84bfee300a74ceb656c95d"
   },
   {
