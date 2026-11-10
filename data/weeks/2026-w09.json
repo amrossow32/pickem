@@ -1,7 +1,7 @@
 {
  "week": 9,
  "label": "Week 9",
- "status": "locked",
+ "status": "graded",
  "sample": false,
  "games": [
   {
@@ -130,7 +130,10 @@
    "away": "Bills",
    "home": "Vikings",
    "kickoff": "2026-11-10T01:15:00Z",
-   "final": null,
+   "final": {
+    "away": 23,
+    "home": 6
+   },
    "odds_event_id": "17ad7eff2f7875e20a8109abe40470e3"
   },
   {
