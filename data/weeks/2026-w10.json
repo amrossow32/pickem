@@ -186,6 +186,33 @@
    "kickoff": "2026-11-15T21:05:00Z",
    "final": null,
    "odds_event_id": "6079a5cbabf99b265a17edfc92a1da60"
+  },
+  {
+   "id": "w10g21",
+   "league": "CFB",
+   "away": "Alabama",
+   "home": "Vanderbilt",
+   "kickoff": "2026-11-14T17:45:00Z",
+   "final": null,
+   "odds_event_id": "fe42d22bafb7d5f406317697dff44ee6"
+  },
+  {
+   "id": "w10g22",
+   "league": "CFB",
+   "away": "Ole Miss",
+   "home": "Oklahoma",
+   "kickoff": "2026-11-14T21:15:00Z",
+   "final": null,
+   "odds_event_id": "8ad669f4c9b70f38fdb057c114588776"
+  },
+  {
+   "id": "w10g23",
+   "league": "CFB",
+   "away": "Purdue",
+   "home": "Iowa",
+   "kickoff": "2026-11-15T00:30:00Z",
+   "final": null,
+   "odds_event_id": "13916d6f26b193abfc3367d80f27e64c"
   }
  ],
  "picks": [
@@ -822,6 +849,182 @@
     "fetched_at": "2026-11-14T07:13:31Z",
     "raw_file": "data/raw/2026-w10-lock-0713.json"
    }
+  },
+  {
+   "player": "tobin",
+   "game_id": "w10g21",
+   "market": "spread",
+   "team": "Vanderbilt",
+   "side": "home",
+   "submitted_line": 14.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": 14.0,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w10g22",
+   "market": "spread",
+   "team": "Oklahoma",
+   "side": "home",
+   "submitted_line": -2.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": -2.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w10g23",
+   "market": "spread",
+   "team": "Iowa",
+   "side": "home",
+   "submitted_line": -16.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": -17.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w10g19",
+   "market": "team_total",
+   "team": "Jaguars",
+   "team_side": "away",
+   "side": "over",
+   "submitted_line": 27.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": 27.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Jaguars team total. The odds feed does not carry team totals, so this is graded at the line as submitted. Late picks carry no lock."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w10g12",
+   "market": "spread",
+   "team": "Steelers",
+   "side": "away",
+   "submitted_line": 3.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": 3.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "nik",
+   "game_id": "w10g18",
+   "market": "spread",
+   "team": "Rams",
+   "side": "away",
+   "submitted_line": -9.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": -9.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "nik",
+   "game_id": "w10g15",
+   "market": "spread",
+   "team": "Texas",
+   "side": "away",
+   "submitted_line": 4.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": 4.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "nik",
+   "game_id": "w10g14",
+   "market": "spread",
+   "team": "USC",
+   "side": "away",
+   "submitted_line": 11.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": 9.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "nik",
+   "game_id": "w10g19",
+   "market": "spread",
+   "team": "Jaguars",
+   "side": "away",
+   "submitted_line": -10.5,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": -10.5,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
+  },
+  {
+   "player": "nik",
+   "game_id": "w10g17",
+   "market": "spread",
+   "team": "Chiefs",
+   "side": "away",
+   "submitted_line": -3,
+   "submitted_at": "2026-11-14T19:06:41Z",
+   "official_line": -3.0,
+   "locked_at": "2026-11-14T08:06:37Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-14T08:06:37Z",
+    "raw_file": "data/raw/2026-w10-midnight.json"
+   },
+   "line_note": "Submitted after midnight; graded at the midnight line. Late picks carry no lock."
   }
  ],
  "line_source": {
@@ -830,7 +1033,5 @@
   "raw_file": "data/raw/2026-w10-midnight.json",
   "note": "All picks were locked as they came in; midnight snapshot saved for late picks."
  },
- "needs_review": [
-  "Tobin and Nik have 1 pick each so far. Tobin, G and Nik have no lock marked."
- ]
+ "needs_review": []
 }

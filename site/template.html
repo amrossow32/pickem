@@ -124,9 +124,9 @@ const S = L.scoring;
 const byId = Object.fromEntries(L.players.map(p=>[p.id,p]));
 const fmt = n => n==null ? '' : (n>0?'+':'')+String(n).replace(/\.5$/,'½').replace(/^(\+|-)?0½$/,'$1½');
 const fmtLine = n => n==null ? '—' : (n===0?'PK':(n>0?'+':'')+n);
-const isTotal = p => p.market==='total';
+const isTotal = p => p.market==='total' || p.market==='team_total';
 const pickLine = (p,n) => isTotal(p) ? (n==null?'—':(p.side==='over'?'o':'u')+n) : fmtLine(n);
-const pickName = p => isTotal(p) ? (p.side==='over'?'Over':'Under') : (p.team+(p.market==='spread_h1'?' 1H':''));
+const pickName = p => p.market==='team_total' ? `${p.team} ${p.side==='over'?'over':'under'}` : isTotal(p) ? (p.side==='over'?'Over':'Under') : (p.team+(p.market==='spread_h1'?' 1H':''));
 const tz = L.timezone || 'America/Los_Angeles';
 const dt = iso => iso ? new Date(iso).toLocaleString('en-US',{timeZone:tz,month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) + ' PT' : '—';
 
@@ -137,6 +137,7 @@ function gradePick(p, g){
   if(!g || !g.final) return 'pending';
   const line = p.official_line ?? p.submitted_line;
   if(line==null) return 'pending';
+  if(p.market==='team_total'){ const pts=g.final[p.team_side]; const m = p.side==='over'? pts-line : line-pts; return m>0?'W':m<0?'L':'P'; }
   if(p.market==='total'){ const sum=g.final.away+g.final.home; const m = p.side==='over'? sum-line : line-sum; return m>0?'W':m<0?'L':'P'; }
   const mine = p.side==='away'? g.final.away : g.final.home;
   const theirs = p.side==='away'? g.final.home : g.final.away;
