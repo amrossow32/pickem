@@ -47,6 +47,8 @@ Paste past weeks in the same format plus the lines and finals, and say
   Saturday 12:00 AM PT (or kickoff, for games that start earlier).
 - The raw API responses in `data/raw/` are the proof and are never edited.
 - Cancelled or postponed games are a push for everyone.
+- Picks submitted after the Friday 11:59 PM PT deadline are graded at the saved midnight line
+  and never carry a lock, so a late player can only score their 6 picks, nothing doubled.
 
 ## Data files
 
