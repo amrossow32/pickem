@@ -193,7 +193,10 @@
    "away": "Alabama",
    "home": "Vanderbilt",
    "kickoff": "2026-11-14T17:45:00Z",
-   "final": null,
+   "final": {
+    "away": 21,
+    "home": 6
+   },
    "odds_event_id": "fe42d22bafb7d5f406317697dff44ee6"
   },
   {
