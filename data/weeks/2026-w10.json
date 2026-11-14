@@ -1,7 +1,7 @@
 {
  "week": 10,
  "label": "Week 10",
- "status": "open",
+ "status": "locked",
  "sample": false,
  "games": [
   {
@@ -824,7 +824,12 @@
    }
   }
  ],
- "line_source": null,
+ "line_source": {
+  "book": "draftkings",
+  "fetched_at": "2026-11-14T08:06:37Z",
+  "raw_file": "data/raw/2026-w10-midnight.json",
+  "note": "All picks were locked as they came in; midnight snapshot saved for late picks."
+ },
  "needs_review": [
   "Tobin and Nik have 1 pick each so far. Tobin, G and Nik have no lock marked."
  ]
