@@ -103,7 +103,10 @@
    "away": "Kansas",
    "home": "West Virginia",
    "kickoff": "2026-11-14T20:30:00Z",
-   "final": null,
+   "final": {
+    "away": 37,
+    "home": 14
+   },
    "odds_event_id": "4ff5dc819e70afa47904e5b901e4f8bc"
   },
   {
@@ -121,7 +124,10 @@
    "away": "Tennessee",
    "home": "Texas A&M",
    "kickoff": "2026-11-14T20:00:00Z",
-   "final": null,
+   "final": {
+    "away": 22,
+    "home": 7
+   },
    "odds_event_id": "4c15d7c4261fa1d8b75615a46d4d2ea7"
   },
   {
@@ -130,7 +136,10 @@
    "away": "USC",
    "home": "Indiana",
    "kickoff": "2026-11-14T20:30:00Z",
-   "final": null,
+   "final": {
+    "away": 13,
+    "home": 27
+   },
    "odds_event_id": "0da9451fe176ce110bdcf79c077bb223"
   },
   {
