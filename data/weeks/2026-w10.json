@@ -22,7 +22,10 @@
    "away": "Patriots",
    "home": "Lions",
    "kickoff": "2026-11-15T14:30:00Z",
-   "final": null,
+   "final": {
+    "away": 10,
+    "home": 35
+   },
    "odds_event_id": "b8c10fdf1e0ac4e13deee7f7c0af0b0b"
   },
   {
@@ -31,7 +34,10 @@
    "away": "Texans",
    "home": "Browns",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 27
+   },
    "odds_event_id": "be0e03cc42fbc9b6962467b22c7bf9dd"
   },
   {
@@ -40,7 +46,10 @@
    "away": "Vikings",
    "home": "Packers",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 30,
+    "home": 10
+   },
    "odds_event_id": "5d8d85473b87f772a979ecf294acab94"
   },
   {
@@ -58,7 +67,10 @@
    "away": "Bills",
    "home": "Jets",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 31,
+    "home": 12
+   },
    "odds_event_id": "1057d50949844ddf483da9c8c20354be"
   },
   {
@@ -76,7 +88,10 @@
    "away": "Texas Tech",
    "home": "Oklahoma State",
    "kickoff": "2026-11-15T02:30:00Z",
-   "final": null,
+   "final": {
+    "away": 52,
+    "home": 27
+   },
    "odds_event_id": "320a213c475110f032710dcd06c94e8e"
   },
   {
@@ -166,7 +181,10 @@
    "away": "Dolphins",
    "home": "Colts",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 22,
+    "home": 24
+   },
    "odds_event_id": "b5700b4d938fd94429f60d4622cc9c0a"
   },
   {
@@ -175,7 +193,10 @@
    "away": "Chiefs",
    "home": "Falcons",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 35,
+    "home": 13
+   },
    "odds_event_id": "3c71d515b726f1096aabb435badb83fd"
   },
   {
@@ -193,7 +214,10 @@
    "away": "Jaguars",
    "home": "Titans",
    "kickoff": "2026-11-15T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 40,
+    "home": 23
+   },
    "odds_event_id": "28800df7e768ecec14f116454d560f9b"
   },
   {
@@ -223,7 +247,10 @@
    "away": "Ole Miss",
    "home": "Oklahoma",
    "kickoff": "2026-11-14T21:15:00Z",
-   "final": null,
+   "final": {
+    "away": 17,
+    "home": 24
+   },
    "odds_event_id": "8ad669f4c9b70f38fdb057c114588776"
   },
   {
