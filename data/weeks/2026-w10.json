@@ -139,7 +139,10 @@
    "away": "Steelers",
    "home": "Bengals",
    "kickoff": "2026-11-16T01:20:00Z",
-   "final": null,
+   "final": {
+    "away": 18,
+    "home": 38
+   },
    "odds_event_id": "48e497c230e6c9afcb3b600091d28e17"
   },
   {
