@@ -1,7 +1,7 @@
 {
  "week": 11,
  "label": "Week 11",
- "status": "open",
+ "status": "locked",
  "sample": false,
  "games": [
   {
@@ -1047,6 +1047,11 @@
    }
   }
  ],
- "line_source": null,
+ "line_source": {
+  "book": "draftkings",
+  "fetched_at": "2026-11-21T08:06:17Z",
+  "raw_file": "data/raw/2026-w11-midnight.json",
+  "note": "All picks were locked as they came in; midnight snapshot saved for late picks."
+ },
  "needs_review": []
 }
