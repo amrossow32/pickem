@@ -3,7 +3,788 @@
  "label": "Week 11",
  "status": "open",
  "sample": false,
- "games": [],
- "picks": [],
- "line_source": null
+ "games": [
+  {
+   "id": "w11g1",
+   "league": "NFL",
+   "away": "Colts",
+   "home": "Texans",
+   "kickoff": "2026-11-20T01:15:44Z",
+   "final": {
+    "away": 3,
+    "home": 26
+   },
+   "odds_event_id": "66f9e83cf025d58acee12bce18661fb3"
+  },
+  {
+   "id": "w11g2",
+   "league": "CFB",
+   "away": "New Mexico",
+   "home": "Wyoming",
+   "kickoff": "2026-11-21T02:20:00Z",
+   "final": {
+    "away": 24,
+    "home": 17
+   },
+   "odds_event_id": "e497245c3311ac853201a67404dc82ea"
+  },
+  {
+   "id": "w11g3",
+   "league": "CFB",
+   "away": "Bowling Green",
+   "home": "Toledo",
+   "kickoff": "2026-11-21T00:30:00Z",
+   "final": {
+    "away": 0,
+    "home": 19
+   },
+   "odds_event_id": "a365d6d7dcd55eca42de4791543e3f80"
+  },
+  {
+   "id": "w11g4",
+   "league": "NFL",
+   "away": "Titans",
+   "home": "Cowboys",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "5e63079b678f8c13419adc169fff02d3"
+  },
+  {
+   "id": "w11g5",
+   "league": "NFL",
+   "away": "Saints",
+   "home": "Bears",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "3ea90704fb576633bd1e2fa5aafd9ea3"
+  },
+  {
+   "id": "w11g6",
+   "league": "CFB",
+   "away": "San Diego State",
+   "home": "Boise State",
+   "kickoff": "2026-11-22T02:30:00Z",
+   "final": null,
+   "odds_event_id": "028f0fcc2f6411c4816e543bb7fa226c"
+  },
+  {
+   "id": "w11g7",
+   "league": "NFL",
+   "away": "Raiders",
+   "home": "Broncos",
+   "kickoff": "2026-11-22T21:25:00Z",
+   "final": null,
+   "odds_event_id": "1940706a79cbcbafacdcbf231069716b"
+  },
+  {
+   "id": "w11g8",
+   "league": "NFL",
+   "away": "Steelers",
+   "home": "Eagles",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "cbe45bafcc2615fc1d96cbc12840377a"
+  },
+  {
+   "id": "w11g9",
+   "league": "NFL",
+   "away": "Jets",
+   "home": "Chargers",
+   "kickoff": "2026-11-22T21:05:00Z",
+   "final": null,
+   "odds_event_id": "4b20b742b6168aaca4f25d87f11b1526"
+  },
+  {
+   "id": "w11g10",
+   "league": "CFB",
+   "away": "Ohio State",
+   "home": "Nebraska",
+   "kickoff": "2026-11-21T16:59:00Z",
+   "final": null,
+   "odds_event_id": "03a07ec7a62fbc2d6bf4748aafd30303"
+  },
+  {
+   "id": "w11g11",
+   "league": "CFB",
+   "away": "UCLA",
+   "home": "Michigan",
+   "kickoff": "2026-11-21T20:30:00Z",
+   "final": null,
+   "odds_event_id": "ae9b81f4814e1d9dae835a13f4245ce3"
+  },
+  {
+   "id": "w11g12",
+   "league": "CFB",
+   "away": "Texas A&M",
+   "home": "Oklahoma",
+   "kickoff": "2026-11-21T20:45:00Z",
+   "final": null,
+   "odds_event_id": "5c082e013b5328e3db1def552628765f"
+  },
+  {
+   "id": "w11g13",
+   "league": "NFL",
+   "away": "Vikings",
+   "home": "49ers",
+   "kickoff": "2026-11-23T01:20:00Z",
+   "final": null,
+   "odds_event_id": "60e1d27b083a335b722c2c852ea85612"
+  },
+  {
+   "id": "w11g14",
+   "league": "NFL",
+   "away": "Buccaneers",
+   "home": "Lions",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "41e2dd69bddd65d7e823d9ed61cc2afc"
+  },
+  {
+   "id": "w11g15",
+   "league": "NFL",
+   "away": "Jaguars",
+   "home": "Giants",
+   "kickoff": "2026-11-22T21:25:00Z",
+   "final": null,
+   "odds_event_id": "8ba112fabf4e87639338a5f437c5abfe"
+  },
+  {
+   "id": "w11g16",
+   "league": "CFB",
+   "away": "Utah",
+   "home": "TCU",
+   "kickoff": "2026-11-22T02:00:00Z",
+   "final": null,
+   "odds_event_id": "7585fb8b12453a68ca1195319ae44c78"
+  },
+  {
+   "id": "w11g17",
+   "league": "NFL",
+   "away": "Cardinals",
+   "home": "Chiefs",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "403a88701352da05b0710a9e883b803e"
+  },
+  {
+   "id": "w11g18",
+   "league": "CFB",
+   "away": "SMU",
+   "home": "Notre Dame",
+   "kickoff": "2026-11-22T00:30:00Z",
+   "final": null,
+   "odds_event_id": "fa98066b4b400fb6af0672e170cc584a"
+  },
+  {
+   "id": "w11g19",
+   "league": "CFB",
+   "away": "Arizona",
+   "home": "Kansas State",
+   "kickoff": "2026-11-22T00:00:00Z",
+   "final": null,
+   "odds_event_id": "9470f469f957e9eddae9392cb23b4623"
+  },
+  {
+   "id": "w11g20",
+   "league": "CFB",
+   "away": "Indiana",
+   "home": "Washington",
+   "kickoff": "2026-11-21T20:30:00Z",
+   "final": null,
+   "odds_event_id": "6b40f07e146bab0dba574f0d3b07659e"
+  },
+  {
+   "id": "w11g21",
+   "league": "CFB",
+   "away": "Clemson",
+   "home": "Duke",
+   "kickoff": "2026-11-21T00:28:00Z",
+   "final": {
+    "away": 20,
+    "home": 10
+   },
+   "odds_event_id": "f247efd606eabe7d3d87504bc3af43b4"
+  },
+  {
+   "id": "w11g22",
+   "league": "CFB",
+   "away": "Oklahoma State",
+   "home": "Arizona State",
+   "kickoff": "2026-11-22T03:15:00Z",
+   "final": null,
+   "odds_event_id": "ecfec2fe1db57f88e603f9947add1e26"
+  },
+  {
+   "id": "w11g23",
+   "league": "CFB",
+   "away": "Utah State",
+   "home": "Oregon State",
+   "kickoff": "2026-11-22T03:30:00Z",
+   "final": null,
+   "odds_event_id": "6e36f5c3c55edcb31749b0de4a146d14"
+  },
+  {
+   "id": "w11g24",
+   "league": "NFL",
+   "away": "Bengals",
+   "home": "Commanders",
+   "kickoff": "2026-11-24T01:15:00Z",
+   "final": null,
+   "odds_event_id": "3a60ed1d20004aa4d4772b2c1a2272e7"
+  }
+ ],
+ "picks": [
+  {
+   "player": "tobin",
+   "game_id": "w11g1",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 44.5,
+   "submitted_at": null,
+   "official_line": 44.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Game was played before picks were loaded; graded at the line as submitted."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g2",
+   "market": "spread",
+   "team": "New Mexico",
+   "side": "away",
+   "submitted_line": -7.5,
+   "submitted_at": null,
+   "official_line": -7.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Game was played before picks were loaded; graded at the line as submitted."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g3",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 48.5,
+   "submitted_at": null,
+   "official_line": 48.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Game was played before picks were loaded; graded at the line as submitted."
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g4",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 54.5,
+   "submitted_at": null,
+   "official_line": 54.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "g",
+   "game_id": "w11g5",
+   "market": "spread_h1",
+   "team": "Bears",
+   "side": "home",
+   "submitted_line": -6.5,
+   "submitted_at": null,
+   "official_line": -6.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "First-half pick. The odds feed has no first-half lines or halftime scores, so this uses the line as submitted and needs the first-half result from the group."
+  },
+  {
+   "player": "g",
+   "game_id": "w11g4",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 55.5,
+   "submitted_at": null,
+   "official_line": 54.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "g",
+   "game_id": "w11g6",
+   "market": "spread",
+   "team": "Boise State",
+   "side": "home",
+   "submitted_line": -16.5,
+   "submitted_at": null,
+   "official_line": -17.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "g",
+   "game_id": "w11g7",
+   "market": "spread",
+   "team": "Broncos",
+   "side": "home",
+   "submitted_line": -10,
+   "submitted_at": null,
+   "official_line": -10.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "g",
+   "game_id": "w11g8",
+   "market": "spread",
+   "team": "Steelers",
+   "side": "away",
+   "submitted_line": -4.5,
+   "submitted_at": null,
+   "official_line": -3.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "g",
+   "game_id": "w11g9",
+   "market": "spread",
+   "team": "Jets",
+   "side": "away",
+   "submitted_line": 3,
+   "submitted_at": null,
+   "official_line": 3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g10",
+   "market": "spread",
+   "team": "Ohio State",
+   "side": "away",
+   "submitted_line": -3.5,
+   "submitted_at": null,
+   "official_line": -3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g11",
+   "market": "spread",
+   "team": "Michigan",
+   "side": "home",
+   "submitted_line": 3.5,
+   "submitted_at": null,
+   "official_line": 3.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g12",
+   "market": "spread",
+   "team": "Oklahoma",
+   "side": "home",
+   "submitted_line": -7,
+   "submitted_at": null,
+   "official_line": -7.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g13",
+   "market": "spread",
+   "team": "49ers",
+   "side": "home",
+   "submitted_line": -3,
+   "submitted_at": null,
+   "official_line": -3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g14",
+   "market": "spread",
+   "team": "Buccaneers",
+   "side": "away",
+   "submitted_line": 5.5,
+   "submitted_at": null,
+   "official_line": 5.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "rick",
+   "game_id": "w11g15",
+   "market": "spread",
+   "team": "Jaguars",
+   "side": "away",
+   "submitted_line": -6,
+   "submitted_at": null,
+   "official_line": -6.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g16",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 46.5,
+   "submitted_at": null,
+   "official_line": 46.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g5",
+   "market": "spread_h1",
+   "team": "Bears",
+   "side": "home",
+   "submitted_line": -6.5,
+   "submitted_at": null,
+   "official_line": -6.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "First-half pick. The odds feed has no first-half lines or halftime scores, so this uses the line as submitted and needs the first-half result from the group."
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g14",
+   "market": "spread",
+   "team": "Buccaneers",
+   "side": "away",
+   "submitted_line": 5.5,
+   "submitted_at": null,
+   "official_line": 5.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g17",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 40.5,
+   "submitted_at": null,
+   "official_line": 40.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g18",
+   "market": "spread",
+   "team": "Notre Dame",
+   "side": "home",
+   "submitted_line": -20.5,
+   "submitted_at": null,
+   "official_line": -20.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "dan",
+   "game_id": "w11g19",
+   "market": "spread",
+   "team": "Kansas State",
+   "side": "home",
+   "submitted_line": 7.5,
+   "submitted_at": null,
+   "official_line": 7.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g10",
+   "market": "spread",
+   "team": "Nebraska",
+   "side": "home",
+   "submitted_line": 3.5,
+   "submitted_at": null,
+   "official_line": 3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g1",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 44.5,
+   "submitted_at": null,
+   "official_line": 44.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Written as u44.4; read as u44.5. Game was played before picks were loaded; graded at the line as submitted."
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g20",
+   "market": "spread",
+   "team": "Washington",
+   "side": "home",
+   "submitted_line": 8.5,
+   "submitted_at": null,
+   "official_line": 7.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g14",
+   "market": "spread",
+   "team": "Buccaneers",
+   "side": "away",
+   "submitted_line": 5.5,
+   "submitted_at": null,
+   "official_line": 5.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g13",
+   "market": "spread",
+   "team": "Vikings",
+   "side": "away",
+   "submitted_line": 3,
+   "submitted_at": null,
+   "official_line": 3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "nik",
+   "game_id": "w11g21",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 41.5,
+   "submitted_at": null,
+   "official_line": 41.5,
+   "locked_at": null,
+   "lock": false,
+   "line_note": "Game was played before picks were loaded; graded at the line as submitted."
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g22",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 59.5,
+   "submitted_at": null,
+   "official_line": 59.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g23",
+   "market": "team_total",
+   "team": "Oregon State",
+   "side": "over",
+   "submitted_line": 30.5,
+   "submitted_at": null,
+   "official_line": 30.5,
+   "locked_at": null,
+   "lock": false,
+   "team_side": "home",
+   "line_note": "Oregon State team total. The odds feed does not carry team totals, so this is graded at the line as submitted."
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g15",
+   "market": "spread",
+   "team": "Jaguars",
+   "side": "away",
+   "submitted_line": -6,
+   "submitted_at": null,
+   "official_line": -6.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g24",
+   "market": "spread",
+   "team": "Bengals",
+   "side": "away",
+   "submitted_line": -6,
+   "submitted_at": null,
+   "official_line": -6.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g13",
+   "market": "spread",
+   "team": "49ers",
+   "side": "home",
+   "submitted_line": -3,
+   "submitted_at": null,
+   "official_line": -3.0,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  },
+  {
+   "player": "doe",
+   "game_id": "w11g5",
+   "market": "spread",
+   "team": "Bears",
+   "side": "home",
+   "submitted_line": -11.5,
+   "submitted_at": null,
+   "official_line": -11.5,
+   "locked_at": "2026-11-21T06:23:13Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T06:23:13Z",
+    "raw_file": "data/raw/2026-w11-lock-0623.json"
+   }
+  }
+ ],
+ "line_source": null,
+ "needs_review": [
+  "Bears 1H -6.5 (G and Dan): first-half result needed from the group.",
+  "Tally and Rossow: no picks yet. Tobin: 2 picks and a lock to come. Rick: no lock marked."
+ ]
 }

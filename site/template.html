@@ -133,6 +133,7 @@ const dt = iso => iso ? new Date(iso).toLocaleString('en-US',{timeZone:tz,month:
 /* grading */
 function gradePick(p, g){
   if(p.manual_result) return p.manual_result;
+  if(p.market==='spread_h1') return 'pending';
   if(g && g.voided) return 'P';
   if(!g || !g.final) return 'pending';
   const line = p.official_line ?? p.submitted_line;

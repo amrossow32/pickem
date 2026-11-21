@@ -14,7 +14,9 @@ Steps:
    If a game was cancelled or postponed past the week, set "voided": true on it; voided games
    grade as a push for everyone who picked them.
 3. Write final: {away, home} for completed games. Spreads and totals both grade from this.
-   First-half picks and picks with a manual_result are left alone. Do not compute results yourself; the
+   First-half picks and picks with a manual_result are left alone. A first-half pick has no
+   automatic result: until the commissioner supplies one (manual_result), keep it listed in
+   needs_review so the week is not closed without it. Do not compute results yourself; the
    dashboard grades from final scores and official lines.
 4. If every picked game now has a final (or is voided), AND it is after the week's Monday night
    game (Monday 9 PM Pacific or later), AND needs_review does not say picks are still to come,
