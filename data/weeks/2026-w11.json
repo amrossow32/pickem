@@ -100,7 +100,10 @@
    "away": "Ohio State",
    "home": "Nebraska",
    "kickoff": "2026-11-21T16:59:00Z",
-   "final": null,
+   "final": {
+    "away": 28,
+    "home": 31
+   },
    "odds_event_id": "03a07ec7a62fbc2d6bf4748aafd30303"
   },
   {
