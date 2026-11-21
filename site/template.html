@@ -133,7 +133,8 @@ const dt = iso => iso ? new Date(iso).toLocaleString('en-US',{timeZone:tz,month:
 /* grading */
 function gradePick(p, g){
   if(p.manual_result) return p.manual_result;
-  if(p.market==='spread_h1') return 'pending';
+  if(p.market==='spread_h1'){ const h=g&&g.final_h1; const l=p.official_line??p.submitted_line; if(!h||l==null) return 'pending';
+    const m=(p.side==='away'?h.away-h.home:h.home-h.away)+l; return m>0?'W':m<0?'L':'P'; }
   if(g && g.voided) return 'P';
   if(!g || !g.final) return 'pending';
   const line = p.official_line ?? p.submitted_line;
