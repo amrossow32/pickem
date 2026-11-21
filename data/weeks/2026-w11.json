@@ -231,6 +231,24 @@
    "kickoff": "2026-11-24T01:15:00Z",
    "final": null,
    "odds_event_id": "3a60ed1d20004aa4d4772b2c1a2272e7"
+  },
+  {
+   "id": "w11g25",
+   "league": "CFB",
+   "away": "Virginia Tech",
+   "home": "Miami",
+   "kickoff": "2026-11-22T00:00:00Z",
+   "final": null,
+   "odds_event_id": "8d53f308424d388c9003e02cac8b4cf6"
+  },
+  {
+   "id": "w11g26",
+   "league": "NFL",
+   "away": "Dolphins",
+   "home": "Bills",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "final": null,
+   "odds_event_id": "4c5b1c0843a260278e95eb93e7787576"
   }
  ],
  "picks": [
@@ -272,23 +290,6 @@
    "locked_at": null,
    "lock": false,
    "line_note": "Game was played before picks were loaded; graded at the line as submitted."
-  },
-  {
-   "player": "tobin",
-   "game_id": "w11g4",
-   "market": "total",
-   "team": null,
-   "side": "over",
-   "submitted_line": 54.5,
-   "submitted_at": null,
-   "official_line": 54.5,
-   "locked_at": "2026-11-21T06:23:13Z",
-   "lock": false,
-   "line_source": {
-    "book": "draftkings",
-    "fetched_at": "2026-11-21T06:23:13Z",
-    "raw_file": "data/raw/2026-w11-lock-0623.json"
-   }
   },
   {
    "player": "g",
@@ -398,7 +399,7 @@
    "submitted_at": null,
    "official_line": -3.0,
    "locked_at": "2026-11-21T06:23:13Z",
-   "lock": false,
+   "lock": true,
    "line_source": {
     "book": "draftkings",
     "fetched_at": "2026-11-21T06:23:13Z",
@@ -780,11 +781,164 @@
     "fetched_at": "2026-11-21T06:23:13Z",
     "raw_file": "data/raw/2026-w11-lock-0623.json"
    }
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g25",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 60.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": 60.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g20",
+   "market": "spread",
+   "team": "Indiana",
+   "side": "away",
+   "submitted_line": -7.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": -7.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tobin",
+   "game_id": "w11g7",
+   "market": "spread",
+   "team": "Broncos",
+   "side": "home",
+   "submitted_line": -10.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": -10.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g7",
+   "market": "spread",
+   "team": "Broncos",
+   "side": "home",
+   "submitted_line": -10.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": -10.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g26",
+   "market": "spread",
+   "team": "Bills",
+   "side": "home",
+   "submitted_line": -16.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": -16.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g4",
+   "market": "total",
+   "team": null,
+   "side": "over",
+   "submitted_line": 55.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": 54.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g17",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 40.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": 40.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": true,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g13",
+   "market": "total",
+   "team": null,
+   "side": "under",
+   "submitted_line": 46.5,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": 46.5,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
+  },
+  {
+   "player": "tally",
+   "game_id": "w11g24",
+   "market": "spread",
+   "team": "Bengals",
+   "side": "away",
+   "submitted_line": -6,
+   "submitted_at": "2026-11-21T07:02:02Z",
+   "official_line": -6.0,
+   "locked_at": "2026-11-21T07:02:02Z",
+   "lock": false,
+   "line_source": {
+    "book": "draftkings",
+    "fetched_at": "2026-11-21T07:02:02Z",
+    "raw_file": "data/raw/2026-w11-lock-0702.json"
+   }
   }
  ],
  "line_source": null,
  "needs_review": [
   "Bears 1H -6.5 (G and Dan): first-half result needed from the group.",
-  "Tally and Rossow: no picks yet. Tobin: 2 picks and a lock to come. Rick: no lock marked."
+  "Rossow: no picks yet."
  ]
 }
