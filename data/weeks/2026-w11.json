@@ -46,7 +46,10 @@
    "away": "Titans",
    "home": "Cowboys",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 30,
+    "home": 51
+   },
    "odds_event_id": "5e63079b678f8c13419adc169fff02d3"
   },
   {
@@ -55,8 +58,15 @@
    "away": "Saints",
    "home": "Bears",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
-   "odds_event_id": "3ea90704fb576633bd1e2fa5aafd9ea3"
+   "final": {
+    "away": 13,
+    "home": 21
+   },
+   "odds_event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
+   "final_h1": {
+    "away": 10,
+    "home": 16
+   }
   },
   {
    "id": "w11g6",
@@ -64,7 +74,10 @@
    "away": "San Diego State",
    "home": "Boise State",
    "kickoff": "2026-11-22T02:30:00Z",
-   "final": null,
+   "final": {
+    "away": 22,
+    "home": 20
+   },
    "odds_event_id": "028f0fcc2f6411c4816e543bb7fa226c"
   },
   {
@@ -82,7 +95,10 @@
    "away": "Steelers",
    "home": "Eagles",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 16,
+    "home": 19
+   },
    "odds_event_id": "cbe45bafcc2615fc1d96cbc12840377a"
   },
   {
@@ -145,7 +161,10 @@
    "away": "Buccaneers",
    "home": "Lions",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 21,
+    "home": 31
+   },
    "odds_event_id": "41e2dd69bddd65d7e823d9ed61cc2afc"
   },
   {
@@ -163,7 +182,10 @@
    "away": "Utah",
    "home": "TCU",
    "kickoff": "2026-11-22T02:00:00Z",
-   "final": null,
+   "final": {
+    "away": 38,
+    "home": 17
+   },
    "odds_event_id": "7585fb8b12453a68ca1195319ae44c78"
   },
   {
@@ -172,7 +194,10 @@
    "away": "Cardinals",
    "home": "Chiefs",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 7,
+    "home": 34
+   },
    "odds_event_id": "403a88701352da05b0710a9e883b803e"
   },
   {
@@ -229,7 +254,10 @@
    "away": "Oklahoma State",
    "home": "Arizona State",
    "kickoff": "2026-11-22T03:15:00Z",
-   "final": null,
+   "final": {
+    "away": 30,
+    "home": 27
+   },
    "odds_event_id": "ecfec2fe1db57f88e603f9947add1e26"
   },
   {
@@ -238,7 +266,10 @@
    "away": "Utah State",
    "home": "Oregon State",
    "kickoff": "2026-11-22T03:30:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 31
+   },
    "odds_event_id": "6e36f5c3c55edcb31749b0de4a146d14"
   },
   {
@@ -268,7 +299,10 @@
    "away": "Dolphins",
    "home": "Bills",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 9,
+    "home": 26
+   },
    "odds_event_id": "4c5b1c0843a260278e95eb93e7787576"
   },
   {
@@ -277,7 +311,10 @@
    "away": "Ravens",
    "home": "Panthers",
    "kickoff": "2026-11-22T18:00:00Z",
-   "final": null,
+   "final": {
+    "away": 33,
+    "home": 35
+   },
    "odds_event_id": "4527f57f5bc32742d8194af1ccf7da7e"
   }
  ],
