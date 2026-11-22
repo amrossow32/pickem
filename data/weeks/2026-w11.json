@@ -112,7 +112,10 @@
    "away": "UCLA",
    "home": "Michigan",
    "kickoff": "2026-11-21T20:30:00Z",
-   "final": null,
+   "final": {
+    "away": 16,
+    "home": 18
+   },
    "odds_event_id": "ae9b81f4814e1d9dae835a13f4245ce3"
   },
   {
@@ -121,7 +124,10 @@
    "away": "Texas A&M",
    "home": "Oklahoma",
    "kickoff": "2026-11-21T20:45:00Z",
-   "final": null,
+   "final": {
+    "away": 7,
+    "home": 28
+   },
    "odds_event_id": "5c082e013b5328e3db1def552628765f"
   },
   {
@@ -193,7 +199,10 @@
    "away": "Indiana",
    "home": "Washington",
    "kickoff": "2026-11-21T20:30:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 27
+   },
    "odds_event_id": "6b40f07e146bab0dba574f0d3b07659e"
   },
   {
