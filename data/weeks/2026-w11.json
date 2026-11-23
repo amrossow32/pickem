@@ -158,7 +158,10 @@
    "away": "Vikings",
    "home": "49ers",
    "kickoff": "2026-11-23T01:20:00Z",
-   "final": null,
+   "final": {
+    "away": 10,
+    "home": 35
+   },
    "odds_event_id": "60e1d27b083a335b722c2c852ea85612"
   },
   {
