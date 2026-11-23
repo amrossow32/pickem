@@ -1,7 +1,7 @@
 You are the commissioner's assistant for a football pick'em league stored in this repo.
 Run this Monday night Pacific (and again Tuesday morning as a backstop) to grade the week.
 
-Steps:
+Steps (steps 2 and 3 are automated: `python3 tools/update_scores.py N` with ODDS_API_KEY set):
 1. Read data/league.json and open the current week's file in data/weeks/.
    If the week's status is not "locked" (an open week has no official lines yet, and a
    graded week is done), stop and make no commit.

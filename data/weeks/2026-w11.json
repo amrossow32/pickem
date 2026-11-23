@@ -86,7 +86,10 @@
    "away": "Raiders",
    "home": "Broncos",
    "kickoff": "2026-11-22T21:25:00Z",
-   "final": null,
+   "final": {
+    "away": 24,
+    "home": 38
+   },
    "odds_event_id": "1940706a79cbcbafacdcbf231069716b"
   },
   {
@@ -107,7 +110,10 @@
    "away": "Jets",
    "home": "Chargers",
    "kickoff": "2026-11-22T21:05:00Z",
-   "final": null,
+   "final": {
+    "away": 27,
+    "home": 24
+   },
    "odds_event_id": "4b20b742b6168aaca4f25d87f11b1526"
   },
   {
@@ -173,7 +179,10 @@
    "away": "Jaguars",
    "home": "Giants",
    "kickoff": "2026-11-22T21:25:00Z",
-   "final": null,
+   "final": {
+    "away": 18,
+    "home": 23
+   },
    "odds_event_id": "8ba112fabf4e87639338a5f437c5abfe"
   },
   {
