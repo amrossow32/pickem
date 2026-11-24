@@ -1,7 +1,7 @@
 {
  "week": 11,
  "label": "Week 11",
- "status": "locked",
+ "status": "graded",
  "sample": false,
  "games": [
   {
@@ -290,7 +290,10 @@
    "away": "Bengals",
    "home": "Commanders",
    "kickoff": "2026-11-24T01:15:00Z",
-   "final": null,
+   "final": {
+    "away": 20,
+    "home": 22
+   },
    "odds_event_id": "3a60ed1d20004aa4d4772b2c1a2272e7"
   },
   {
