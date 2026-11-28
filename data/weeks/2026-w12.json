@@ -1,9 +1,14 @@
 {
  "week": 12,
  "label": "Week 12",
- "status": "open",
+ "status": "locked",
  "sample": false,
  "games": [],
  "picks": [],
- "line_source": null
+ "line_source": {
+  "book": "draftkings",
+  "fetched_at": "2026-11-28T08:06:24Z",
+  "raw_file": "data/raw/2026-w12-midnight.json",
+  "note": "No picks were loaded at midnight; snapshot saved for late picks."
+ }
 }
